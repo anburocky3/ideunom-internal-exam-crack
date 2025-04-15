@@ -1,4 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IDEUNOM Internal Exam Assistant
+
+Simple app designed to help students with IDEUNOM (University of Madras) internal exams by providing pre-filled answers for assignments.
+
+## Screenshots
+
+![Screenshot](/public/screenshots/2.png)
+![Screenshot](/public/screenshots/3.png)
+![Screenshot](/public/screenshots/5.png)
+![Screenshot](/public/screenshots/6.png)
+
+## Features
+
+- **Course Selection**: Browse through different courses and semesters
+- **Assignment Navigation**: Access assignments by subject
+- **Code Snippets**: View and copy JavaScript code snippets for exam answers
+- **Syntax Highlighting**: Code displayed with proper syntax highlighting
+- **Copy to Clipboard**: One-click copying of code snippets
+
+## How It Works
+
+1. **Login to IDEUNOM MCQ Portal**: Access the [University of Madras MCQ portal](http://www.ideunom.ac.in/mcq/) with your registration number and DOB
+2. **Select Assignment**: Choose the assignment you want to take
+3. **Open Developer Tools**: Press `CTRL + SHIFT + I` to open browser developer tools
+4. **Copy Code**: From this application, select the matching assignment and copy the code
+5. **Paste in Console**: Paste the code in the browser console
+6. **Verify and Submit**: Cross-verify the answers and submit your assignment
+
+## Safety and Ethics
+
+- **Frontend Only**: The application only modifies the frontend, making it safe to use
+- **AI-Generated Answers**: Answers are predicted using AI models like ChatGPT and Claude
+- **Minimal Code**: Scripts contain only the logic needed to update answers
+- **Educational Purpose**: Intended solely for educational purposes
+- **Cross-Verification**: Users are encouraged to verify all answers before submission
 
 ## Getting Started
 
@@ -16,21 +50,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Disclaimer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is intended solely for educational purposes. Any use beyond this scope is the responsibility of the user, and we disclaim any liability for misuse or unintended application.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Highlight.js](https://highlightjs.org/) - Code syntax highlighting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for educational purposes only.

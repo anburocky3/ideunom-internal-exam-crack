@@ -24,24 +24,25 @@ export default function TutorialPage() {
                   />
                 </svg>
               </Link>
-              How to Use This?
+              How to Use This Application
             </h1>
 
             <div className="space-y-8 text-white/90">
               <section>
                 <p className="mb-4">
-                  This application helps you prefill your assignments in a
-                  single click. Read carefully, how to use it.
+                  This application helps you pre-fill your assignments with a
+                  single click. Follow these instructions carefully to use it
+                  effectively.
                 </p>
                 <ol className="list-decimal pl-6 space-y-2">
                   <li>
-                    Login with your Register number & DOB on{" "}
+                    Login with your Registration number and DOB on{" "}
                     <a
                       href="http://www.ideunom.ac.in/mcq/"
                       target="_blank"
                       className="text-blue-300 hover:text-blue-400"
                     >
-                      University Of Madras (MCQ)
+                      University of Madras (MCQ)
                     </a>{" "}
                     website.
                     <div className="my-4">
@@ -80,11 +81,11 @@ export default function TutorialPage() {
                     </div>
                   </li>
                   <li>
-                    Once the quiz has been loaded, press{" "}
+                    Once the quiz has loaded, press{" "}
                     <code className="text-blue-400 bg-gray-900 px-3 py-1 rounded">
                       CTRL + SHIFT + I
                     </code>
-                    . It will open this devtools in the same window.
+                    . This will open the developer tools in the same window.
                     <div className="my-4">
                       <Image
                         src="/screenshots/4.png"
@@ -96,12 +97,12 @@ export default function TutorialPage() {
                     </div>
                   </li>
                   <li>
-                    Based on the assignment you have choose, go to{" "}
+                    Based on the assignment you have chosen, go to{" "}
                     <Link href="/" className="text-blue-300">
                       the app
                     </Link>{" "}
                     and select your assignment correctly. Use the &quot;Copy to
-                    Clipboard&quot; button to copy the code
+                    Clipboard&quot; button to copy the code.
                     <div className="my-4">
                       <Image
                         src="/screenshots/5.png"
@@ -113,9 +114,8 @@ export default function TutorialPage() {
                     </div>
                   </li>
                   <li>
-                    Once copied. paste it in the devtools, we already opened.
-                    Use the &quot;Copy to Clipboard&quot; button to copy the
-                    code
+                    Once copied, paste it in the developer tools console we
+                    already opened.
                     <div className="my-4">
                       <Image
                         src="/screenshots/6.png"
@@ -154,33 +154,33 @@ export default function TutorialPage() {
                   <div className="bg-white/5 p-4 rounded-lg">
                     <h3 className="text-xl font-medium mb-2">100% Safe</h3>
                     <p>
-                      Since, we are just modifying it frontend makes is 100%
-                      safe.
+                      Since we are only modifying the frontend, this makes it
+                      100% safe to use.
                     </p>
                   </div>
                   <div className="bg-white/5 p-4 rounded-lg">
                     <h3 className="text-xl font-medium mb-2">
-                      Referred using AI Models
+                      Referenced using AI Models
                     </h3>
                     <p>
-                      All answers are predicted & selected by the AI models such
-                      as chatgpt &amp; claude!
+                      All answers are predicted and selected by AI models such
+                      as ChatGPT and Claude!
                     </p>
                   </div>
                   <div className="bg-white/5 p-4 rounded-lg">
                     <h3 className="text-xl font-medium mb-2">
-                      No Unwanted codes
+                      No Unwanted Code
                     </h3>
                     <p>
-                      The script has only logic that will update the correct
-                      answer, nothing more.
+                      The script contains only the logic needed to update the
+                      correct answers, nothing more.
                     </p>
                   </div>
                   <div className="bg-white/5 p-4 rounded-lg">
                     <h3 className="text-xl font-medium mb-2">Cross-verify!</h3>
                     <p>
-                      Data-correctness is the important factor, so crossverify
-                      everything!
+                      Data correctness is the most important factor, so
+                      cross-verify everything!
                     </p>
                   </div>
                 </div>

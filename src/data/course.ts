@@ -114,6 +114,7 @@ export const courseData: CourseData = {
         name: "Semester 4",
         subjects: [
           {
+            subjectCode: "",
             name: "Coming Soon!",
             assignments: [],
           },
