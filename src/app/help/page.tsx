@@ -7,16 +7,16 @@ export default function TutorialPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
       <div className="min-h-screen bg-black/20 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-xl">
-            <h1 className="text-3xl font-bold text-white mb-6">
+        <div className="container mx-auto px-4 py-4 sm:py-8">
+          <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-8 shadow-xl">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
               <Link href={"/"} className="hover:text-orange-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
-                  className="inline-flex mr-3"
+                  className="inline-flex mr-2 sm:mr-3"
                 >
                   <path
                     fill="currentColor"
@@ -27,14 +27,14 @@ export default function TutorialPage() {
               How to Use This Application
             </h1>
 
-            <div className="space-y-8 text-white/90">
+            <div className="space-y-6 sm:space-y-8 text-white/90">
               <section>
                 <p className="mb-4">
                   This application helps you pre-fill your assignments with a
                   single click. Follow these instructions carefully to use it
                   effectively.
                 </p>
-                <ol className="list-decimal pl-6 space-y-2">
+                <ol className="list-decimal pl-4 sm:pl-6 space-y-4 sm:space-y-6">
                   <li>
                     Login with your Registration number and DOB on{" "}
                     <a
@@ -45,54 +45,54 @@ export default function TutorialPage() {
                       University of Madras (MCQ)
                     </a>{" "}
                     website.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/1.png"
                         alt="Screenshot 1"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
                   <li>
                     Once you have logged in, you will see the list of
                     assignments available to take.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/2.png"
                         alt="Screenshot 2"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
                   <li>
                     Select which assignment you want to take.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/3.png"
                         alt="Screenshot 3"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
                   <li>
                     Once the quiz has loaded, press{" "}
-                    <code className="text-blue-400 bg-gray-900 px-3 py-1 rounded">
+                    <code className="text-blue-400 bg-gray-900 px-2 py-1 rounded text-sm sm:text-base">
                       CTRL + SHIFT + I
                     </code>
                     . This will open the developer tools in the same window.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/4.png"
                         alt="Screenshot 4"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
@@ -103,45 +103,45 @@ export default function TutorialPage() {
                     </Link>{" "}
                     and select your assignment correctly. Use the &quot;Copy to
                     Clipboard&quot; button to copy the code.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/5.png"
                         alt="Screenshot 5"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
                   <li>
                     Once copied, paste it in the developer tools console we
                     already opened.
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4">
                       <Image
                         src="/screenshots/6.png"
                         alt="Screenshot 6"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
                   <li>
                     Cross-verify everything! And submit your assignment!
-                    <div className="my-4">
+                    <div className="my-3 sm:my-4 space-y-3 sm:space-y-4">
                       <Image
                         src="/screenshots/7.png"
                         alt="Screenshot 7"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                       <Image
                         src="/screenshots/8.png"
                         alt="Screenshot 8"
                         width={800}
                         height={450}
-                        className="rounded-lg border border-white/20"
+                        className="rounded-lg border border-white/20 w-full h-auto"
                       />
                     </div>
                   </li>
@@ -149,17 +149,21 @@ export default function TutorialPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold mb-4">Is it safe?</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white/5 p-4 rounded-lg">
-                    <h3 className="text-xl font-medium mb-2">100% Safe</h3>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
+                  Is it safe?
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  <div className="bg-white/5 p-3 sm:p-4 rounded-lg">
+                    <h3 className="text-lg sm:text-xl font-medium mb-2">
+                      100% Safe
+                    </h3>
                     <p>
                       Since we are only modifying the frontend, this makes it
                       100% safe to use.
                     </p>
                   </div>
-                  <div className="bg-white/5 p-4 rounded-lg">
-                    <h3 className="text-xl font-medium mb-2">
+                  <div className="bg-white/5 p-3 sm:p-4 rounded-lg">
+                    <h3 className="text-lg sm:text-xl font-medium mb-2">
                       Referenced using AI Models
                     </h3>
                     <p>
@@ -167,8 +171,8 @@ export default function TutorialPage() {
                       as ChatGPT and Claude!
                     </p>
                   </div>
-                  <div className="bg-white/5 p-4 rounded-lg">
-                    <h3 className="text-xl font-medium mb-2">
+                  <div className="bg-white/5 p-3 sm:p-4 rounded-lg">
+                    <h3 className="text-lg sm:text-xl font-medium mb-2">
                       No Unwanted Code
                     </h3>
                     <p>
@@ -176,8 +180,10 @@ export default function TutorialPage() {
                       correct answers, nothing more.
                     </p>
                   </div>
-                  <div className="bg-white/5 p-4 rounded-lg">
-                    <h3 className="text-xl font-medium mb-2">Cross-verify!</h3>
+                  <div className="bg-white/5 p-3 sm:p-4 rounded-lg">
+                    <h3 className="text-lg sm:text-xl font-medium mb-2">
+                      Cross-verify!
+                    </h3>
                     <p>
                       Data correctness is the most important factor, so
                       cross-verify everything!
@@ -187,10 +193,10 @@ export default function TutorialPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold mb-4">
+                <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
                   Tips for Success
                 </h2>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-4 sm:pl-6 space-y-2">
                   <li>
                     Always read the assignment description to understand what
                     the code is meant to do
@@ -210,16 +216,16 @@ export default function TutorialPage() {
                 </ul>
               </section>
 
-              <div className="mt-8 text-center">
+              <div className="mt-6 sm:mt-8 text-center">
                 <Link
                   href="/"
-                  className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                  className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
                 >
                   Return to Home
                 </Link>
               </div>
             </div>
-            <div className="mt-3 bg-gray-800 p-5 rounded">
+            <div className="mt-3 bg-gray-800 p-3 sm:p-5 rounded text-sm sm:text-base">
               This project is intended solely for educational purposes. Any use
               beyond this scope is the responsibility of the user, and we
               disclaim any liability for misuse or unintended application.

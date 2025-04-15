@@ -54,29 +54,29 @@ export default function CourseSelector() {
   };
 
   return (
-    <div className=" p-4 ">
+    <div className="p-2 sm:p-4">
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-between">
-          <div className="text-center flex-1 mb-6">
-            <h1 className="text-4xl font-bold text-white mb-2">
+        <div className="flex flex-col sm:flex-row justify-between">
+          <div className="text-center sm:flex-1 mb-4 sm:mb-6">
+            <h1 className="text-2xl sm:text-4xl font-bold text-white mb-2">
               University of Madras
             </h1>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-sm sm:text-base">
               Select a course to view its assignments and code snippets
             </p>
           </div>
-          <div className="flex items-center justify-end mb-4">
+          <div className="flex items-center justify-center sm:justify-end mb-4">
             <Link
               href="/help"
-              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+              className="px-3 sm:px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base"
             >
               How to Use
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
-                className="w-5 h-5 inline-flex"
+                className="w-4 h-4 sm:w-5 sm:h-5 inline-flex ml-1"
               >
                 <path
                   fill="currentColor"
@@ -87,7 +87,7 @@ export default function CourseSelector() {
           </div>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <label
             htmlFor="course-select"
             className="block text-sm font-medium text-white mb-2"
@@ -98,7 +98,7 @@ export default function CourseSelector() {
             id="course-select"
             value={selectedCourse}
             onChange={handleCourseChange}
-            className="w-full p-3 border border-white/20 rounded-lg shadow-lg bg-white/10 text-white focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200"
+            className="w-full p-2 sm:p-3 border border-white/20 rounded-lg shadow-lg bg-white/10 text-white focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200"
           >
             <option value="" className="bg-gray-800 text-white">
               Select a Course
@@ -116,34 +116,37 @@ export default function CourseSelector() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10">
         <section id="form">
           {selectedCourse && (
-            <div className="space-y-6 animate-fade-in">
+            <div className="space-y-4 sm:space-y-6 animate-fade-in">
               {courseData[selectedCourse].semesters.map((semester) => (
                 <div
                   key={semester.name}
-                  className="border border-white/20 rounded-lg p-6 bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="border border-white/20 rounded-lg p-4 sm:p-6 bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <h2 className="text-2xl font-semibold mb-4 text-white">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-white">
                     {semester.name}
                   </h2>
-                  <div className="space-y-4 bg-indigo-800 p-5 rounded border-b border-white/20">
+                  <div className="space-y-3 sm:space-y-4 bg-indigo-800 p-3 sm:p-5 rounded border-b border-white/20">
                     {semester.subjects.map((subject) => (
-                      <div key={subject.name} className="space-y-3">
-                        <h3 className="text-xl font-medium text-white/90 ">
+                      <div
+                        key={subject.name}
+                        className="space-y-2 sm:space-y-3"
+                      >
+                        <h3 className="text-lg sm:text-xl font-medium text-white/90">
                           {subject.name}
                           {subject.subjectCode && (
                             <span>
                               {" "}
                               -{" "}
-                              <span className="bg-blue-500 text-sm px-2 py-1 rounded">
+                              <span className="bg-blue-500 text-xs sm:text-sm px-2 py-1 rounded">
                                 ({subject.subjectCode})
                               </span>
                             </span>
                           )}
                         </h3>
-                        <div className="space-y-2 pl-4">
+                        <div className="space-y-2 pl-2 sm:pl-4">
                           <div className="space-y-2">
                             {subject.assignments.map((assignment) => (
                               <button
@@ -151,21 +154,21 @@ export default function CourseSelector() {
                                 onClick={() =>
                                   handleSnippetClick(subject.name, assignment)
                                 }
-                                className="w-full text-left p-3 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-200 group"
+                                className="w-full text-left p-2 sm:p-3 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-200 group"
                               >
                                 <div className="flex items-center justify-between">
                                   <div>
-                                    <span className="text-white group-hover:text-indigo-300 transition-colors duration-200">
+                                    <span className="text-white group-hover:text-indigo-300 transition-colors duration-200 text-sm sm:text-base">
                                       {assignment.title}
                                     </span>
                                     {assignment.description && (
-                                      <p className="text-sm text-white/60 mt-1">
+                                      <p className="text-xs sm:text-sm text-white/60 mt-1">
                                         {assignment.description}
                                       </p>
                                     )}
                                   </div>
                                   <svg
-                                    className="w-5 h-5 text-white/50 group-hover:text-white transition-colors duration-200"
+                                    className="w-4 h-4 sm:w-5 sm:h-5 text-white/50 group-hover:text-white transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -193,9 +196,9 @@ export default function CourseSelector() {
         <section id="codes">
           {selectedSnippet ? (
             <div className="animate-fade-in">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 sm:mb-4">
                 <div>
-                  <h3 className="text-xl font-medium text-white">
+                  <h3 className="text-lg sm:text-xl font-medium text-white">
                     {selectedSnippet.subject}{" "}
                     <span className="font-normal">
                       ({selectedSnippet.title})
@@ -203,29 +206,24 @@ export default function CourseSelector() {
                   </h3>
                   <p className="text-white/60 mt-1"></p>
 
-                  <div className="">
+                  <div className="text-sm sm:text-base">
                     Paste this code in the{" "}
                     <a
                       href="http://www.ideunom.ac.in/mcq/"
                       target="_blank"
                       className="text-blue-300"
                     >
-                      University Of Madras MCQ
+                      University of Madras MCQ
                     </a>
                   </div>
-                  {/* {selectedSnippet.description && (
-                    <p className="text-white/60 mt-1">
-                      {selectedSnippet.description}
-                    </p>
-                  )} */}
                 </div>
                 <button
                   onClick={() => copyToClipboard(selectedSnippet.code)}
-                  className="btn btn-secondary relative"
+                  className="btn btn-secondary relative mt-2 sm:mt-0"
                   title="Copy to clipboard"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -252,9 +250,11 @@ export default function CourseSelector() {
               </div>
             </div>
           ) : (
-            <div className="bg-white/10 p-5 rounded ">
-              <h4>Select your assignment</h4>
-              <p>
+            <div className="bg-white/10 p-4 sm:p-5 rounded">
+              <h4 className="text-lg sm:text-xl font-medium">
+                Select your assignment
+              </h4>
+              <p className="text-sm sm:text-base mt-2">
                 Please cross-verify everything and select the subject code and
                 look for the questions properly. You are responsible for your
                 own safety!
@@ -264,7 +264,7 @@ export default function CourseSelector() {
         </section>
       </div>
 
-      <div className="mt-3 bg-gray-800 p-5 rounded">
+      <div className="mt-3 bg-gray-800 p-3 sm:p-5 rounded text-xs sm:text-sm">
         This project is intended solely for educational purposes. Any use beyond
         this scope is the responsibility of the user, and we disclaim any
         liability for misuse or unintended application.
