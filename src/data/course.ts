@@ -135,7 +135,7 @@ export const courseData: CourseData = {
             assignments: [
               {
                 title: "Assignment 1",
-                code: "// No code available",
+                code: "snippets/mba/SPBA207M/1.js",
                 description: "Cross-verify wherever possible. ",
               },
               {
@@ -151,7 +151,7 @@ export const courseData: CourseData = {
             assignments: [
               {
                 title: "Assignment 1",
-                code: "// No code available",
+                code: "snippets/mba/SPBA208M/1.js",
                 description: "Cross-verify wherever possible. ",
               },
               {
@@ -167,7 +167,7 @@ export const courseData: CourseData = {
             assignments: [
               {
                 title: "Assignment 1",
-                code: "// No code available",
+                code: "snippets/mba/SPBA209M/1.js",
                 description: "Cross-verify wherever possible. ",
               },
               {
@@ -183,7 +183,7 @@ export const courseData: CourseData = {
             assignments: [
               {
                 title: "Assignment 1",
-                code: "// No code available",
+                code: "snippets/mba/SPBA01/1.js",
                 description: "Cross-verify wherever possible. ",
               },
               {
@@ -199,7 +199,7 @@ export const courseData: CourseData = {
             assignments: [
               {
                 title: "Assignment 1",
-                code: "// No code available",
+                code: "snippets/mba/SPBA02/1.js",
                 description: "Cross-verify wherever possible. ",
               },
               {
